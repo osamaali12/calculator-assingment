@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculator App</title>
+</head>
+<body>
+    <div class="heading">
+            <h2>CALCULATOR APP</h2>
+    </div>
+<div class="main">
+    <div>
+        <input id="result" class="result" type="text">
+    </div>
+    <div>
+        <td><input class="clearBtn" type="button" value="C" onclick="clearResult()"></td>
+    </div>
+    <table>
+        <tr>
+            <td><input class="btn" type="button" value="9" onclick="getNumber('9')"></td>
+            <td><input class="btn" type="button" value="8" onclick="getNumber('8')"></td>
+            <td><input class="btn" type="button" value="/" onclick="getNumber('/')"></td> 
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="7" onclick="getNumber('7')"></td>
+            <td><input class="btn" type="button" value="6" onclick="getNumber('6')"></td>
+            <td><input class="btn" type="button" value="*" onclick="getNumber('*')"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="5" onclick="getNumber('5')"></td>
+            <td><input class="btn" type="button" value="4" onclick="getNumber('4')"></td>
+            <td><input class="btn" type="button" value="-" onclick="getNumber('-')"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="3" onclick="getNumber('3')"></td>
+           
+            <td><input class="btn" type="button" value="2" onclick="getNumber('2')"></td>
+            <td><input class="btn" type="button" value="+" onclick="getNumber('+')"></td>
+            
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" value="1" onclick="getNumber('1')"></td>
+           <td><input class="btn" type="button" value="." onclick="getNumber('.')"></td>
+           <td rowspan="5"><input class="btn" style="height: 110px" type="button" value="=" onclick="getResult('=')"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input class="btn" style="width: 205px" type="button" value="0" onclick="getNumber('0')"></td>
+        </tr>
+    </table>
+</div>
+</body>
+
+<script src="app.js"></script>
+</html>
